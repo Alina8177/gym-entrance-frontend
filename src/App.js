@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom'
+import { useState } from 'react';
 import './App.css';
+import SignIn from './components/SignIn';
+import SignUp from './components/SignUp';
+
 
 function App() {
+  const [loggedInUser, setLoggedInUser] = useState ({})
+
+ const handleLogin = (data) => {
+   setLoggedInUser(data)
+ }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Route exact path={'/sign-in'} element={<SignIn handleLogin={handleLogin}/>} />
+        <Route exact path={'/sign-up'} element={<SignUp handleLogin={handleLogin}  />} />
     </div>
   );
 }
