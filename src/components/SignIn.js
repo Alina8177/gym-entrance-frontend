@@ -13,7 +13,7 @@ const SignIn = (props) => {
         <div className="header-div">
         <Link  to="/">  <img
           id="gym-logo"
-          src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.template.net%2Fdesign-templates%2Flogo%2Ffitness-logo-template%2F&psig=AOvVaw2URCAohgY_UP_N4qmU_zbi&ust=1640181341252000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLjhhuSF9fQCFQAAAAAdAAAAABAN"
+          src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
           alt="gym-1"
         />  </Link>
 
@@ -42,10 +42,7 @@ const SignIn = (props) => {
                 .then(({ data }) => {
                   console.log(data);
                   if (data.status === 200) {data.loggedIn =true ; props.handleLogin(data) ; navigation('/logged-in')}
-                //   <Route exact path={'/'} element={<Landing data={data}/>} />
-                   
-                //   localStorage.setItem("user", JSON.stringify({ userName, password }))
-                   
+                                   
                 });
             }
            }}

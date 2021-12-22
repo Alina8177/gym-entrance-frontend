@@ -1,24 +1,32 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom'
-import { useState } from 'react';
 import './App.css';
-import SignIn from './components/SignIn';
-import SignUp from './components/SignUp';
-
-
+import Navbar from './components/NavBar/index';
+import { BrowserRouter as Router,  Route, Routes } from 'react-router-dom';
+import Home from './pages';
+import About from './pages/about';
+import Programs from './pages/programs';
+import Gyms from './pages/gyms';
+import Payments from './pages/payments';
+import Orders from './pages/orders';
+import SignUp from './pages/signUp';
+import SignIn from './components/SignIn'
+  
 function App() {
-  const [loggedInUser, setLoggedInUser] = useState ({})
-
- const handleLogin = (data) => {
-   setLoggedInUser(data)
- }
-
   return (
-    <div className="App">
-      <Route exact path={'/sign-in'} element={<SignIn handleLogin={handleLogin}/>} />
-        <Route exact path={'/sign-up'} element={<SignUp handleLogin={handleLogin}  />} />
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path='/' exact element={<Home/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/programs' element={<Programs />} />
+        <Route path='/gyms' element={<Gyms/>} />
+        <Route path='/payments' element={<Payments/>} />
+        <Route path='/orders' element={<Orders/>} />
+        <Route path='/sign-up' element={<SignUp/>} />
+        <Route path='/sign-in' element={<SignIn/>} />
+      </Routes>
+    </Router>
   );
 }
-
+  
 export default App;

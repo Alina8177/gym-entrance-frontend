@@ -9,8 +9,8 @@ const SignUp = () => {
   const [password, setPassword] = useState("");
   const navigation = useNavigate();
   return (
-    <div >
-
+    <>
+    <div>
         <div className="signup-header">
         <div className="header-div">
         <Link  to="/">  <img
@@ -60,7 +60,8 @@ const SignUp = () => {
 
       
     </div>
-  );
+    </>
+  )
 };
 
 export default SignUp;
