@@ -51,3 +51,12 @@
 #payments-logo {
     width: 80vw;
 }
+
+#payments {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
