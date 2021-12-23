@@ -36,5 +36,14 @@
 }
 
 #programms-logo {
-    width: 50vw;
+    width: 80vw;
+}
+
+#programs {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
