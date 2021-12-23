@@ -15,7 +15,7 @@ const Programs = () => {
         id="Programms-logo"
         src="https://images.unsplash.com/photo-1602668253129-0730d95f1b27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTczNnx8Z3ltfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
         alt="gym-1" />  </Link>
-      <div>
+      <div id="programs">
       <h1 style={{ fontSize: '35px', margin: '30px 0'}}>Choose best programs for you</h1>
       <ul style={{ listStyle: 'none', margin: '35px 0', fontSize: '25px'}}>
         <li>Cardio</li>
