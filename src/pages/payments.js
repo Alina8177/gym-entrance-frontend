@@ -14,6 +14,7 @@ const Payments = () => {
       <Link to="/">  <img
         id="Programs-logo"
         src="https://blogs.worldbank.org/sites/default/files/2021-06/government_payments_shutterstock_252335677_780.jpg"
+        style={{width: '75vw', height: '90%'}}
         alt="gym-1" />  </Link>
       <div>
       <h1 style={{ fontSize: '35px', margin: '30px 0'}}>Payments</h1>
