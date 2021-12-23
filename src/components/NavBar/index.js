@@ -18,17 +18,17 @@ const Navbar = () => {
           <NavLink to='/about' activeStyle>
             About
           </NavLink>
-          <NavLink to='/events' activeStyle>
-            Events
+          <NavLink to='/programs' activeStyle>
+            Programs
           </NavLink>
           <NavLink to='/gyms' activeStyle>
             Gyms
           </NavLink>
-          <NavLink to='/team' activeStyle>
-            Teams
+          <NavLink to='/orders' activeStyle>
+            Orders
           </NavLink>
-          <NavLink to='/blogs' activeStyle>
-            Blogs
+          <NavLink to='/payments' activeStyle>
+            Payments
           </NavLink>
           <NavLink to='/sign-up' activeStyle>
             Sign Up
@@ -37,7 +37,7 @@ const Navbar = () => {
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+          <NavBtnLink to='/sign-in'>Sign In</NavBtnLink>
         </NavBtn>
       </Nav>
     </>

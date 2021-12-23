@@ -15,7 +15,7 @@ const SignUp = () => {
         <div className="header-div">
         <Link  to="/">  <img
           id="gym-logo"
-          src="https://images.unsplash.com/photo-1577221084712-45b0445d2b00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=398&q=80"
+          src="https://images.unsplash.com/photo-1606335543042-57c525922933?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjgxfHxneW18ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
           alt="gym-1"
         />  </Link>
           

@@ -35,15 +35,14 @@ const SignIn = (props) => {
             if (!userName.length || !password.length) {
               alert("Please enter username or password");
             } else {
-              api
-                .get(`/users/login/`, {
-                  params: { userName: userName, password: password },
-                })
-                .then(({ data }) => {
-                  console.log(data);
-                  if (data.status === 200) {data.loggedIn =true ; props.handleLogin(data) ; navigation('/logged-in')}
-                                   
-                });
+              api.post("api/auth/token/", { email: userName, password }).then(({ data }) => {
+                console.log(data);
+                localStorage.setItem(
+                  "user",
+                  JSON.stringify({ userName, password })
+                );
+                navigation("/");
+              });
             }
            }}
         >
